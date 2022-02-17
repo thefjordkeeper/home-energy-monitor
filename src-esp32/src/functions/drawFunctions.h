@@ -2,7 +2,7 @@
 #define DRAW_FUNCTIONS
 
 #include <WiFi.h>
-#include <Adafruit_SSD1306.h>
+#include <oled/OLEDDisplayUi.h>
 #include "../config/enums.h"
 #include "../config/config.h"
 
