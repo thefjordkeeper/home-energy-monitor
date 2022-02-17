@@ -6,7 +6,7 @@
 #include "../config/enums.h"
 #include "../config/config.h"
 
-extern Adafruit_SSD1306 display;
+extern OLEDDisplayUi display;
 extern DisplayValues gDisplayValues;
 extern unsigned char measureIndex;
 
