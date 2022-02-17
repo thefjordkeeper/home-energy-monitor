@@ -71,7 +71,7 @@ void setup()
   // ----------------------------------------------------------------
   // TASK: Connect to AWS & keep the connection alive.
   // ----------------------------------------------------------------
-  #if AWS_ENABLED == true
+  #if AWS_ENABLED == false
     xTaskCreate(
       keepAWSConnectionAlive,
       "MQTT-AWS",      // Task name

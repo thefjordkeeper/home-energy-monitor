@@ -10,7 +10,7 @@
  * The name of this device (as defined in the AWS IOT console).
  * Also used to set the hostname on the network
  */
-#define DEVICE_NAME "*****YOUR AWS IOT DEVICE NAME******"
+#define DEVICE_NAME "Water_Heater_Power_Monitor"
 
 /**
  * ADC input pin that is used to read out the CT sensor
@@ -21,13 +21,13 @@
  * The voltage of your home, used to calculate the wattage.
  * Try setting this as accurately as possible.
  */
-#define HOME_VOLTAGE 245.0
+#define HOME_VOLTAGE 120.0
 
 /**
  * WiFi credentials
  */
-#define WIFI_NETWORK "****** YOUR WIFI NETWORK NAME *******"
-#define WIFI_PASSWORD "****** YOUR WIFI PASSWORD *******"
+#define WIFI_NETWORK "slark"
+#define WIFI_PASSWORD "harveycat"
 
 /**
  * Timeout for the WiFi connection. When this is reached,
@@ -64,7 +64,7 @@
  * The MQTT endpoint of the service we should connect to and receive messages
  * from.
  */
-#define AWS_ENABLED true
+#define AWS_ENABLED false
 #define AWS_IOT_ENDPOINT "**** YOUR AWS IOT ENDPOINT ****"
 #define AWS_IOT_TOPIC "**** YOUR AWS IOT RULE ARN ****"
 
@@ -83,11 +83,11 @@
 /**
  * Wether or not you want to enable Home Assistant integration
  */
-#define HA_ENABLED false
-#define HA_ADDRESS "*** YOUR HOME ASSISTANT IP ADDRESSS ***"
+#define HA_ENABLED true
+#define HA_ADDRESS "192.168.1.32"
 #define HA_PORT 8883
-#define HA_USER "*** MQTT USER ***"
-#define HA_PASSWORD "*** MQTT PASSWORD ***"
+#define HA_USER "mqtt"
+#define HA_PASSWORD "mqtt"
 
 // Check which core Arduino is running on. This is done because updating the 
 // display only works from the Arduino core.
