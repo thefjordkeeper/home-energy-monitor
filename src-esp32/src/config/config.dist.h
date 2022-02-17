@@ -60,13 +60,6 @@
 #define LOCAL_MEASUREMENTS 30
 
 
-/**
- * The MQTT endpoint of the service we should connect to and receive messages
- * from.
- */
-#define AWS_ENABLED false
-#define AWS_IOT_ENDPOINT "**** YOUR AWS IOT ENDPOINT ****"
-#define AWS_IOT_TOPIC "**** YOUR AWS IOT RULE ARN ****"
 
 #define MQTT_CONNECT_DELAY 200
 #define MQTT_CONNECT_TIMEOUT 20000 // 20 seconds

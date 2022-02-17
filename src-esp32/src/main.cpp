@@ -69,20 +69,6 @@ void setup()
   );
 
   // ----------------------------------------------------------------
-  // TASK: Connect to AWS & keep the connection alive.
-  // ----------------------------------------------------------------
-  #if AWS_ENABLED == false
-    xTaskCreate(
-      keepAWSConnectionAlive,
-      "MQTT-AWS",      // Task name
-      5000,            // Stack size (bytes)
-      NULL,             // Parameter
-      5,                // Task priority
-      NULL              // Task handle
-    );
-  #endif
-
-  // ----------------------------------------------------------------
   // TASK: Update the display every second
   //       This is pinned to the same core as Arduino
   //       because it would otherwise corrupt the OLED
